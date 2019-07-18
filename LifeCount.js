@@ -1,5 +1,5 @@
-var uLifeCounter = 20;
-var eLifeCounter = 20;
+var uLifeCounter = 40;
+var eLifeCounter = 40;
 
 function uIncrease() {
   document.getElementById('YourCount').innerHTML = uLifeCounter++;
@@ -33,8 +33,10 @@ function eDecrease2() {
     document.getElementById('EnemyCount').innerHTML = eLifeCounter;
   }  
 function Reset() {
-    document.getElementById('YourCount').innerHTML = 20;
-    document.getElementById('EnemyCount').innerHTML = 20;
+    uLifeCounter = 40;
+    eLifeCounter = 40;
+    document.getElementById('YourCount').innerHTML = 40;
+    document.getElementById('EnemyCount').innerHTML = 40;
 }
 
 window.onload = function() {
