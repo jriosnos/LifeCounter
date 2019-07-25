@@ -151,5 +151,15 @@
   #YourUp, #YourDown, #EnemyUp, #EnemyDown, #YourUp, #YourDown, #EnemyUp, #EnemyDown, #reset, #uUp2, #uDown2, #eUp2, #eDown2 {
       opacity: 0.5;
   }
+
+  @media (max-width: 490px){
+    body{
+      font-size: 0.6em;
+    }
+    #wrapper{
+      font-size: 0.4em;
+    }
+  }
+
   
   
