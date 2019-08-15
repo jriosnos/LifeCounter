@@ -2,41 +2,45 @@ var uLifeCounter = 40;
 var eLifeCounter = 40;
 
 function uIncrease() {
-  document.getElementById('YourCount').innerHTML = uLifeCounter++;
+  uLifeCounter+=1
+  $('#YourCount').html(uLifeCounter)
 }
 
 function uIncrease2() {
-    uLifeCounter+= 10
-    document.getElementById('YourCount').innerHTML = uLifeCounter;
+  uLifeCounter+= 10
+  $('#YourCount').html(uLifeCounter)
   }
 function uDecrease() {
-  document.getElementById('YourCount').innerHTML = uLifeCounter--;
+  uLifeCounter-= 1
+  $('#YourCount').html(uLifeCounter)
 }
 
 function uDecrease2() {
-    uLifeCounter-=10
-    document.getElementById('YourCount').innerHTML = uLifeCounter;
+  uLifeCounter-=10
+  $('#YourCount').html(uLifeCounter);
   }
 
 function eIncrease() {
-  document.getElementById('EnemyCount').innerHTML = eLifeCounter++;
+  eLifeCounter+=1
+  $('#EnemyCount').html(eLifeCounter)
 }
 function eIncrease2() {
-    eLifeCounter+=10
-    document.getElementById('EnemyCount').innerHTML = eLifeCounter;
+  eLifeCounter+=10
+  $('#EnemyCount').html(eLifeCounter)
   }
 function eDecrease() {
-  document.getElementById('EnemyCount').innerHTML = eLifeCounter--;
+  eLifeCounter-=1
+  $('#EnemyCount').html(eLifeCounter)
 }  
 function eDecrease2() {
-    eLifeCounter-=10
-    document.getElementById('EnemyCount').innerHTML = eLifeCounter;
+  eLifeCounter-=10
+  $('#EnemyCount').html(eLifeCounter)
   }  
 function Reset() {
     uLifeCounter = 40;
     eLifeCounter = 40;
-    document.getElementById('YourCount').innerHTML = 40;
-    document.getElementById('EnemyCount').innerHTML = 40;
+    $('#YourCount').html(40)
+    $('#EnemyCount').html(40);
 }
 
 window.onload = function() {
@@ -52,3 +56,5 @@ window.onload = function() {
     document.getElementById('YourCount').innerHTML = uLifeCounter;
     document.getElementById('EnemyCount').innerHTML = eLifeCounter;
 };
+
+console.log($('#YourCount')[0])
